@@ -26,6 +26,10 @@ repositories {
 bootRun.systemProperties = System.properties
 
 dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    compile 'mysql:mysql-connector-java'
+
+    compile 'org.postgresql:postgresql:9.4-1206-jdbc42'
     compile('org.springframework.boot:spring-boot-starter-data-rest')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
